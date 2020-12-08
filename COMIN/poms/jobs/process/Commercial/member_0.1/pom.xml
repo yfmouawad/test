@@ -52,7 +52,7 @@
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
-      <artifactId>ngdbc</artifactId>
+      <artifactId>mssql-jdbc</artifactId>
       <version>6.0.0</version>
     </dependency>
     <dependency>
