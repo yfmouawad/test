@@ -190,10 +190,10 @@
       <column comment="" key="false" length="-1" name="isSchoolCertificate" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Notes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="isInactive" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="InactivatedOn" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedOn" nullable="false" originalLength="-1" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="InactivatedOn" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CreatedOn" nullable="false" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CreatedBy" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EditedOn" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EditedOn" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="EditedBy" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Photo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Object" usefulColumn="true"/>
     </metadata>
@@ -278,7 +278,7 @@
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;MEMBERS_CT&quot;"/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
@@ -463,7 +463,7 @@
       <column comment="" key="false" length="200" name="FirstName" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="LastName" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="MiddleName" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DateOfBirth" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DateOfBirth" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="20" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="PlaceOfBirth" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="IdentityNumber" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="NssfNumber" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -479,10 +479,10 @@
       <column comment="" key="false" length="-1" name="isSchoolCertificate" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Notes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="TEXT" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="isInactive" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="InactivatedOn" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedOn" nullable="false" originalLength="-1" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="InactivatedOn" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="CreatedOn" nullable="false" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CreatedBy" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EditedOn" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="EditedOn" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="EditedBy" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Photo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="LONGBLOB" type="id_Object" usefulColumn="true"/>
     </metadata>
@@ -495,7 +495,7 @@
       <column comment="" key="false" length="200" name="FirstName" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="LastName" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="MiddleName" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DateOfBirth" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DateOfBirth" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="20" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="PlaceOfBirth" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="IdentityNumber" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="NssfNumber" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -511,10 +511,10 @@
       <column comment="" key="false" length="-1" name="isSchoolCertificate" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Notes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="TEXT" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="isInactive" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="InactivatedOn" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CreatedOn" nullable="false" originalLength="-1" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="InactivatedOn" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="CreatedOn" nullable="false" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CreatedBy" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EditedOn" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="20" name="EditedOn" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="EditedBy" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Photo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="LONGBLOB" type="id_Object" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -690,13 +690,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1a582402-8af1-42d9-936f-a3c7911718ff"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>TMjMzYEBjXvAa4O08QnW2EcWy4mw8Mvkj62/S/KAezNpn7A4Bpm/sXkU9fd3ww5btZkL8o+9sK/0
-rtO24YM5/Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5ef08615-057b-4e5e-b51c-6a19f9907a8a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>PNDx4GBFKrdRU5lQC47C6ybUjF2yDKYnZ+Egn47N/xxFzrP1Ao+IFPkN5a7rHaJXoVVw0UM/iIkj
-A5hoSHGi3w==</DigestValue></Reference></SignedInfo><SignatureValue>gZjcK1P4qCC578bvg4I62TEuFbUTEXVIXiSjP9Utc6n4nYqfzdtBaZ0+tTLvhxHBXgKb9Fxr+i7z
-ppjwCFtiRsZtB7bHwfXWUocUQJPX3N1iTT1bMdk0mdaUHtdymIHQalqHbXnxsvsTA2MK6Vw6NMS7
-lXDS24CIWVzzSEFKPrOFnhiaXeHxaVUYgrM6pxEuRZ3+cEyITWEtPmhfw7p5dZN355SYSk6aG+z4
-a/6Vz0R69aGjObDHQnmb+NMO2cNJsfGZ+RQRKCQZBy0h2WcF5LVue+C9eu4LW9LBcYlZhpb4+jIm
-fCwRckGBaENzOkEgIMGf0z1On1tj7nSjV9jtPw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c6ea83e0-279f-499b-b5df-66666caa667c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ndyAxAezz0tc5E0o/PEYNYIRKYG4vfg9mK479Yvaf4QDYWqKAR0S4aQsOZb2+TLH8rRA4ZjMXBLb
+dYBMcEvKjg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2eab943d-c8d2-47d5-9070-19e17917f609"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>eR/yL/YmeTDS3bBsn7DCXOvlAUL7RrqjVzHyyH6VFtXHBcCtQO8fwf6ueLcSPnqqT7CQUJ1rfW2F
+J1gXD9TQiw==</DigestValue></Reference></SignedInfo><SignatureValue>Ih8Mz0uBmmpaX/pti1QtmeFZGwVjjbTXpnpqkM5FrgfIzDnxHTeY+cScuokFyHQJGnILbvFMAhxh
+KUB4nuzr7REJ2Hwj7wsc3NQ6OjPCrrC0R11loQjk7FippCDQPr4hCk1cgEMNsF96uVodKwQkzASD
+7FmEZYL21zvuGyE4jXuaPxdDyua8BCXULBitBWHjBm1KfvnoX8L0QM4mcfh7vs2fbWoQiWSIO7of
+djmJWC3AWCl8MW+zDrOIqSJZHqU/iBzi8nrT7T0S2cgDISLQPxXJpV2qp+R3GxlkKPLDOXZhqZRI
+WwM+VMYN3eHYQUI6oXaOmQdC46aVH1CpHDKfFg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -720,4 +720,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5ef08615-057b-4e5e-b51c-6a19f9907a8a" Target="#_1a582402-8af1-42d9-936f-a3c7911718ff"><Timestamp>2020-12-11 18:08:36</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2eab943d-c8d2-47d5-9070-19e17917f609" Target="#_c6ea83e0-279f-499b-b5df-66666caa667c"><Timestamp>2020-12-11 18:10:05</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
