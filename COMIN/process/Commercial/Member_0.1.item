@@ -309,7 +309,7 @@
       <column comment="" key="false" length="200" name="FirstName" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="LastName" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="MiddleName" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DateOfBirth" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="20" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="DateOfBirth" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="PlaceOfBirth" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="IdentityNumber" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="NssfNumber" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -325,12 +325,17 @@
       <column comment="" key="false" length="-1" name="isSchoolCertificate" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Notes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="TEXT" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="isInactive" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="InactivatedOn" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="CreatedOn" nullable="false" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="InactivatedOn" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="CreatedOn" nullable="false" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CreatedBy" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="EditedOn" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="EditedOn" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="EditedBy" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Photo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="LONGBLOB" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="SYS_TRANSACTION_ID" nullable="true" originalLength="100" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="SYS_OPERATION_CD" nullable="true" originalLength="1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="SYS_SOURCE_TRANSACTION_ID" nullable="true" originalLength="100" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="SYS_INSERTED_TS" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="EFFECTIVE_TS" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" name="Insert_Hist">
       <column comment="" key="false" length="-1" name="CompanyID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
@@ -341,7 +346,7 @@
       <column comment="" key="false" length="200" name="FirstName" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="LastName" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="MiddleName" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DateOfBirth" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="20" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="DateOfBirth" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="PlaceOfBirth" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="IdentityNumber" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="NssfNumber" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -363,73 +368,98 @@
       <column comment="" key="false" length="20" name="EditedOn" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="EditedBy" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Photo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="LONGBLOB" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="SYS_TRANSACTION_ID" nullable="true" originalLength="100" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="SYS_OPERATION_CD" nullable="true" originalLength="1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="SYS_SOURCE_TRANSACTION_ID" nullable="true" originalLength="100" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="SYS_INSERTED_TS" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="SYS_KEY_ID" nullable="true" originalLength="1000" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="SYS_UPDATED_TS" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="EFFECTIVE_TS" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="EXPIRY_TS" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="CURRENT_FLG" nullable="true" originalLength="1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="DELETE_FLG" nullable="true" originalLength="1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="Insert_CT" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="CompanyID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="MemberID" type="id_Integer"/>
-        <mapperTableEntries name="isCompany" type="id_Integer"/>
-        <mapperTableEntries name="TitleID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="FullName" nullable="true" type="id_String"/>
-        <mapperTableEntries name="FirstName" nullable="true" type="id_String"/>
-        <mapperTableEntries name="LastName" nullable="true" type="id_String"/>
-        <mapperTableEntries name="MiddleName" nullable="true" type="id_String"/>
-        <mapperTableEntries name="DateOfBirth" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="PlaceOfBirth" nullable="true" type="id_String"/>
-        <mapperTableEntries name="IdentityNumber" nullable="true" type="id_String"/>
-        <mapperTableEntries name="NssfNumber" nullable="true" type="id_String"/>
-        <mapperTableEntries name="IncomeTaxNumber" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Gender" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="LanguageID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="NationalityID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="MaritalStatusID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="EducationLevelID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="ProfessionID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="JobTitleID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="isInCharge" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="isSchoolCertificate" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="Notes" nullable="true" type="id_String"/>
-        <mapperTableEntries name="isInactive" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="InactivatedOn" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="CreatedOn" type="id_Date"/>
-        <mapperTableEntries name="CreatedBy" type="id_Integer"/>
-        <mapperTableEntries name="EditedOn" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="EditedBy" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="Photo" nullable="true" type="id_Object"/>
+        <mapperTableEntries expression="row2.CompanyID" name="CompanyID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.MemberID" name="MemberID" type="id_Integer"/>
+        <mapperTableEntries expression="row2.isCompany" name="isCompany" type="id_Integer"/>
+        <mapperTableEntries expression="row2.TitleID" name="TitleID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.FullName" name="FullName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.FirstName" name="FirstName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.LastName" name="LastName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.MiddleName" name="MiddleName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.DateOfBirth" name="DateOfBirth" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row2.PlaceOfBirth" name="PlaceOfBirth" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.IdentityNumber" name="IdentityNumber" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.NssfNumber" name="NssfNumber" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.IncomeTaxNumber" name="IncomeTaxNumber" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Gender" name="Gender" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.LanguageID" name="LanguageID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.NationalityID" name="NationalityID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.MaritalStatusID" name="MaritalStatusID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.EducationLevelID" name="EducationLevelID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.ProfessionID" name="ProfessionID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.JobTitleID" name="JobTitleID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.isInCharge" name="isInCharge" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.isSchoolCertificate" name="isSchoolCertificate" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.Notes" name="Notes" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.isInactive" name="isInactive" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.InactivatedOn" name="InactivatedOn" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row2.CreatedOn" name="CreatedOn" type="id_Date"/>
+        <mapperTableEntries expression="row2.CreatedBy" name="CreatedBy" type="id_Integer"/>
+        <mapperTableEntries expression="row2.EditedOn" name="EditedOn" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row2.EditedBy" name="EditedBy" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.Photo" name="Photo" nullable="true" type="id_Object"/>
+        <mapperTableEntries name="SYS_TRANSACTION_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SYS_OPERATION_CD" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SYS_SOURCE_TRANSACTION_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SYS_INSERTED_TS" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="EFFECTIVE_TS" nullable="true" type="id_Date"/>
       </outputTables>
       <outputTables name="Insert_Hist" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="CompanyID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="MemberID" type="id_Integer"/>
-        <mapperTableEntries name="isCompany" type="id_Integer"/>
-        <mapperTableEntries name="TitleID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="FullName" nullable="true" type="id_String"/>
-        <mapperTableEntries name="FirstName" nullable="true" type="id_String"/>
-        <mapperTableEntries name="LastName" nullable="true" type="id_String"/>
-        <mapperTableEntries name="MiddleName" nullable="true" type="id_String"/>
-        <mapperTableEntries name="DateOfBirth" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="PlaceOfBirth" nullable="true" type="id_String"/>
-        <mapperTableEntries name="IdentityNumber" nullable="true" type="id_String"/>
-        <mapperTableEntries name="NssfNumber" nullable="true" type="id_String"/>
-        <mapperTableEntries name="IncomeTaxNumber" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Gender" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="LanguageID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="NationalityID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="MaritalStatusID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="EducationLevelID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="ProfessionID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="JobTitleID" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="isInCharge" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="isSchoolCertificate" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="Notes" nullable="true" type="id_String"/>
-        <mapperTableEntries name="isInactive" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="InactivatedOn" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="CreatedOn" type="id_Date"/>
-        <mapperTableEntries name="CreatedBy" type="id_Integer"/>
-        <mapperTableEntries name="EditedOn" nullable="true" type="id_Date"/>
-        <mapperTableEntries name="EditedBy" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="Photo" nullable="true" type="id_Object"/>
+        <mapperTableEntries expression="row2.CompanyID" name="CompanyID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.MemberID" name="MemberID" type="id_Integer"/>
+        <mapperTableEntries expression="row2.isCompany" name="isCompany" type="id_Integer"/>
+        <mapperTableEntries expression="row2.TitleID" name="TitleID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.FullName" name="FullName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.FirstName" name="FirstName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.LastName" name="LastName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.MiddleName" name="MiddleName" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.DateOfBirth" name="DateOfBirth" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row2.PlaceOfBirth" name="PlaceOfBirth" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.IdentityNumber" name="IdentityNumber" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.NssfNumber" name="NssfNumber" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.IncomeTaxNumber" name="IncomeTaxNumber" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.Gender" name="Gender" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.LanguageID" name="LanguageID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.NationalityID" name="NationalityID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.MaritalStatusID" name="MaritalStatusID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.EducationLevelID" name="EducationLevelID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.ProfessionID" name="ProfessionID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.JobTitleID" name="JobTitleID" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.isInCharge" name="isInCharge" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.isSchoolCertificate" name="isSchoolCertificate" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.Notes" name="Notes" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row2.isInactive" name="isInactive" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.InactivatedOn" name="InactivatedOn" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row2.CreatedOn" name="CreatedOn" type="id_Date"/>
+        <mapperTableEntries expression="row2.CreatedBy" name="CreatedBy" type="id_Integer"/>
+        <mapperTableEntries expression="row2.EditedOn" name="EditedOn" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row2.EditedBy" name="EditedBy" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.Photo" name="Photo" nullable="true" type="id_Object"/>
+        <mapperTableEntries name="SYS_TRANSACTION_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SYS_OPERATION_CD" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SYS_SOURCE_TRANSACTION_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SYS_INSERTED_TS" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="SYS_KEY_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SYS_UPDATED_TS" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="EFFECTIVE_TS" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="EXPIRY_TS" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="CURRENT_FLG" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DELETE_FLG" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
         <mapperTableEntries name="CompanyID" nullable="true" type="id_Integer"/>
@@ -646,6 +676,31 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SYS_TRANSACTION_ID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SYS_OPERATION_CD"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SYS_SOURCE_TRANSACTION_ID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SYS_INSERTED_TS"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EFFECTIVE_TS"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
     </elementParameter>
     <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
@@ -663,7 +718,7 @@
       <column comment="" key="false" length="200" name="FirstName" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="LastName" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="MiddleName" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DateOfBirth" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="20" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="DateOfBirth" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="PlaceOfBirth" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="IdentityNumber" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="NssfNumber" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -679,12 +734,17 @@
       <column comment="" key="false" length="-1" name="isSchoolCertificate" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Notes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="TEXT" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="isInactive" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="InactivatedOn" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="CreatedOn" nullable="false" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="InactivatedOn" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="CreatedOn" nullable="false" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CreatedBy" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="EditedOn" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="EditedOn" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="EditedBy" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Photo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="LONGBLOB" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="SYS_TRANSACTION_ID" nullable="true" originalLength="100" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="SYS_OPERATION_CD" nullable="true" originalLength="1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="SYS_SOURCE_TRANSACTION_ID" nullable="true" originalLength="100" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="SYS_INSERTED_TS" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="EFFECTIVE_TS" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
       <column comment="" key="false" length="-1" name="CompanyID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
@@ -695,7 +755,7 @@
       <column comment="" key="false" length="200" name="FirstName" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="LastName" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="MiddleName" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DateOfBirth" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="20" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="DateOfBirth" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="PlaceOfBirth" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="IdentityNumber" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="NssfNumber" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -711,12 +771,17 @@
       <column comment="" key="false" length="-1" name="isSchoolCertificate" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Notes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="TEXT" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="isInactive" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="InactivatedOn" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="CreatedOn" nullable="false" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="InactivatedOn" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="CreatedOn" nullable="false" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CreatedBy" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="EditedOn" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="EditedOn" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="EditedBy" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Photo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="LONGBLOB" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="SYS_TRANSACTION_ID" nullable="true" originalLength="100" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="SYS_OPERATION_CD" nullable="true" originalLength="1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="SYS_SOURCE_TRANSACTION_ID" nullable="true" originalLength="100" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="SYS_INSERTED_TS" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="EFFECTIVE_TS" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -902,6 +967,56 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SYS_TRANSACTION_ID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SYS_OPERATION_CD"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SYS_SOURCE_TRANSACTION_ID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SYS_INSERTED_TS"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SYS_KEY_ID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SYS_UPDATED_TS"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EFFECTIVE_TS"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXPIRY_TS"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CURRENT_FLG"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DELETE_FLG"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
     </elementParameter>
     <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
@@ -919,7 +1034,7 @@
       <column comment="" key="false" length="200" name="FirstName" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="LastName" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="MiddleName" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DateOfBirth" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="20" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="DateOfBirth" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="PlaceOfBirth" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="IdentityNumber" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="NssfNumber" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -935,12 +1050,22 @@
       <column comment="" key="false" length="-1" name="isSchoolCertificate" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Notes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="TEXT" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="isInactive" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="InactivatedOn" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="CreatedOn" nullable="false" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="InactivatedOn" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="CreatedOn" nullable="false" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CreatedBy" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="EditedOn" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="EditedOn" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="EditedBy" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Photo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="LONGBLOB" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="SYS_TRANSACTION_ID" nullable="true" originalLength="100" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="SYS_OPERATION_CD" nullable="true" originalLength="1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="SYS_SOURCE_TRANSACTION_ID" nullable="true" originalLength="100" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="SYS_INSERTED_TS" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="SYS_KEY_ID" nullable="true" originalLength="1000" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="SYS_UPDATED_TS" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="EFFECTIVE_TS" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="EXPIRY_TS" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="CURRENT_FLG" nullable="true" originalLength="1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="DELETE_FLG" nullable="true" originalLength="1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
       <column comment="" key="false" length="-1" name="CompanyID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
@@ -951,7 +1076,7 @@
       <column comment="" key="false" length="200" name="FirstName" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="LastName" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="MiddleName" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DateOfBirth" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="20" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="DateOfBirth" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="200" name="PlaceOfBirth" nullable="true" originalLength="200" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="IdentityNumber" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="NssfNumber" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -967,12 +1092,22 @@
       <column comment="" key="false" length="-1" name="isSchoolCertificate" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Notes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="TEXT" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="isInactive" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="InactivatedOn" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="CreatedOn" nullable="false" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="InactivatedOn" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="CreatedOn" nullable="false" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CreatedBy" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="EditedOn" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="-1" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="EditedOn" nullable="true" originalLength="20" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="EditedBy" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="Photo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="LONGBLOB" type="id_Object" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="SYS_TRANSACTION_ID" nullable="true" originalLength="100" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="SYS_OPERATION_CD" nullable="true" originalLength="1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="SYS_SOURCE_TRANSACTION_ID" nullable="true" originalLength="100" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="SYS_INSERTED_TS" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1000" name="SYS_KEY_ID" nullable="true" originalLength="1000" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="SYS_UPDATED_TS" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="EFFECTIVE_TS" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="EXPIRY_TS" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="CURRENT_FLG" nullable="true" originalLength="1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="DELETE_FLG" nullable="true" originalLength="1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -1024,10 +1159,59 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError1"/>
   </connection>
   <connection connectorName="FLOW" label="Insert_CT" lineStyle="0" metaname="Insert_CT" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tDBOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="SYS_INSERTED_TS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SYS_OPERATION_CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SYS_SOURCE_TRANSACTION_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SYS_TRANSACTION_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EFFECTIVE_TS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Insert_CT"/>
   </connection>
   <connection connectorName="FLOW" label="Insert_Hist" lineStyle="0" metaname="Insert_Hist" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_1" target="tDBOutput_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="SYS_KEY_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EXPIRY_TS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SYS_INSERTED_TS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CURRENT_FLG"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DELETE_FLG"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SYS_OPERATION_CD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SYS_SOURCE_TRANSACTION_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SYS_TRANSACTION_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EFFECTIVE_TS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SYS_UPDATED_TS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Insert_Hist"/>
   </connection>
@@ -1076,13 +1260,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3737d00b-ffc7-4df6-b35a-fbcd3d9ff11d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2QSOoJi5/wsHXmuk51tRCRf93bs6ItSliWmbcf2L6AODB4BJjnEhyPLsVLFRe0bhCpSgTzeVJmk3
-dYLgiBnzxQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a98facd0-a1b0-4a0d-b8c7-192f4d0d78bd"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hRPbMk7+Fr8cj/J7NdyoFKUW6KEBj+ya8mwkx3SYabgLg9SgBAWzzVrVZrh0bgQmYUtZGkAw8NPP
-yICbdU6YXw==</DigestValue></Reference></SignedInfo><SignatureValue>PTy2YIxGpIw326C1n/4Lyz7xodBdgA3ImmHMQlV3s5Iyb3SIV9ofLEr80ZbSqd7G3ZqhmhvZslIh
-7PErlU/3XbSqRFVB/ec38UWwE2lmCpRuezt1RZQZzNLDfzKE3jVEFWHkNbj4ky79Y4RpTLfVTPfI
-3LWlTipETMoXYDcfbigeF5g/MUHBKWaHMCTzIIAnhzjAwwr0IJrX9+Tup43XGetzt42icVN+LwBZ
-pweaWU9IeGNomvvYHN6m1YsqNURo9/qCv0IoDLdRT6DBb18BBdIKwu2vb4sOyfmgCHTLutytLqBn
-SfvaoPBOKDe6C2gFj04h+Jy7lrO0201vyTCplA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c03318c8-168e-4663-b9c0-57bb833e4015"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>5J+mLnX17Fhbxkdl1z1As86WoEl5XG6LHYnd/WNNx7FHWbUWTubUMOXgjtibvB/+YHwcJfibWAd1
+Hhw8M/vsaA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2dc6a25e-bd5e-4e32-9b77-dc0d48b91b62"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zsb2AmEvFxOApAVcsMd6AgyTCDAqEAcaYdFxzcoip4632Gfvbf5QCV5cXHo8yr8fPV49HgrIcjoz
+ulhhQgr1VQ==</DigestValue></Reference></SignedInfo><SignatureValue>CAtB+jQlNQxxRRHb3160sCAsrQED2FlxEd7qgzcHb98Q9b4EKCkJRVGV/xrMdK417f4Jr0txz7QI
+YgsKTrR4QCBBonkVyU/gxYLw8z5oy1DD88nF2FpD4RUr/N2jbeMFZmIKuw+CaoPWw38LxIwNA9kD
+WHy/b0D2id5WpvMMy4Gb78wDGXlsQUhJ2187BJDC+2pqyOuQyzKrbKqjF0PeF0XgRggl0d0Kds3b
+4nr5nDaFTKsyrd2dLJwLRCFrzSjkaPCbDvtXCUlF+ruT5cjZi/7m/YS4kVya7ZM1rWLCMX2b0Rk6
+9SSIja56JTO6pMe4/8VkdpwgCaAJvRh6H2889g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1106,4 +1290,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a98facd0-a1b0-4a0d-b8c7-192f4d0d78bd" Target="#_3737d00b-ffc7-4df6-b35a-fbcd3d9ff11d"><Timestamp>2020-12-15 20:16:01</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2dc6a25e-bd5e-4e32-9b77-dc0d48b91b62" Target="#_c03318c8-168e-4663-b9c0-57bb833e4015"><Timestamp>2020-12-15 20:39:42</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
