@@ -725,14 +725,14 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_2"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="MYSQL_5"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_3"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
     <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="PORT" show="false" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
     <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;MEMBERS_CT&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;MEMBERS_HIST&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
@@ -977,6 +977,20 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tMysqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="736">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBCommit_2"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_3"/>
+    <elementParameter field="CHECK" name="CLOSE" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBCommit_2"/>
+  </node>
+  <node componentName="tMysqlRollback" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="736">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRollback_2"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_3"/>
+    <elementParameter field="CHECK" name="CLOSE" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBRollback_2"/>
+  </node>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tDBConnection_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
   </connection>
@@ -990,12 +1004,24 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_2" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_2" target="tDBConnection_3">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
   </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBCommit_1" offsetLabelX="0" offsetLabelY="0" source="tDBCommit_1" target="tDBCommit_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk6"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRollback_1" offsetLabelX="0" offsetLabelY="0" source="tDBRollback_1" target="tDBRollback_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk7"/>
+  </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_3" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_3" target="tDBInput_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tBufferInput_1" offsetLabelX="0" offsetLabelY="0" source="tBufferInput_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tBufferInput_1" offsetLabelX="0" offsetLabelY="0" source="tBufferInput_1" target="tDBCommit_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk5"/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tBufferInput_1" offsetLabelX="0" offsetLabelY="0" source="tBufferInput_1" target="tDBRollback_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError1"/>
   </connection>
   <connection connectorName="FLOW" label="Insert_CT" lineStyle="0" metaname="Insert_CT" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tDBOutput_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -1040,13 +1066,23 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7a4e4f1c-291e-48ba-b047-0c255ee311f1"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nXHS9X2OuGzGIhK+JaDjN5Uwe9V7pgOqXFDPBNxHq86jPa9XLUu+o9VuGfpDstXK6G56/BXi1j/j
-kfL2exUnrg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4205dd20-2b28-46b7-8974-f142ec45a3fb"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>xti0FwxdvjNxI6rjls+B3oMiEvpuRQPuLGcPVgxLijDXrjcRyv1plSZCAB0eZd5QyLO4QkuO6UAv
-WminPWsRzQ==</DigestValue></Reference></SignedInfo><SignatureValue>oKypBUbi4CvL9j94QHSnnSIjhjz6/JIOmLu1zdbrinFU1VNtTWJXWfVBk4SZ7rscGtqDhTEl18O4
-4Bi9XOTCRx8D5slrvWawaMBxyzl29JcQCBLwCaCbDHtvWe+ooxdoJgJ2idkCFLt+qdGygEu11qXF
-FNxPiM8Q4lHauTH1fpF6o6gNxbcswwRyvCLjQ62XJ2VgGpeVs7qP/kjvm2H6UqfRLludB3GYBYdS
-hBIzI/m00th+PtFdEIRmHOUz/jvQXGyWkJHNjFq3WiNKef3QlZ7yaczU5r1jdXgrC4k8QvWWb2bA
-whzmSY3ru7B65l95JeizF8g5LiXgGzgBkiQ6mA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBCommit_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRollback_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3737d00b-ffc7-4df6-b35a-fbcd3d9ff11d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2QSOoJi5/wsHXmuk51tRCRf93bs6ItSliWmbcf2L6AODB4BJjnEhyPLsVLFRe0bhCpSgTzeVJmk3
+dYLgiBnzxQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a98facd0-a1b0-4a0d-b8c7-192f4d0d78bd"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hRPbMk7+Fr8cj/J7NdyoFKUW6KEBj+ya8mwkx3SYabgLg9SgBAWzzVrVZrh0bgQmYUtZGkAw8NPP
+yICbdU6YXw==</DigestValue></Reference></SignedInfo><SignatureValue>PTy2YIxGpIw326C1n/4Lyz7xodBdgA3ImmHMQlV3s5Iyb3SIV9ofLEr80ZbSqd7G3ZqhmhvZslIh
+7PErlU/3XbSqRFVB/ec38UWwE2lmCpRuezt1RZQZzNLDfzKE3jVEFWHkNbj4ky79Y4RpTLfVTPfI
+3LWlTipETMoXYDcfbigeF5g/MUHBKWaHMCTzIIAnhzjAwwr0IJrX9+Tup43XGetzt42icVN+LwBZ
+pweaWU9IeGNomvvYHN6m1YsqNURo9/qCv0IoDLdRT6DBb18BBdIKwu2vb4sOyfmgCHTLutytLqBn
+SfvaoPBOKDe6C2gFj04h+Jy7lrO0201vyTCplA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -1070,4 +1106,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4205dd20-2b28-46b7-8974-f142ec45a3fb" Target="#_7a4e4f1c-291e-48ba-b047-0c255ee311f1"><Timestamp>2020-12-14 16:23:09</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a98facd0-a1b0-4a0d-b8c7-192f4d0d78bd" Target="#_3737d00b-ffc7-4df6-b35a-fbcd3d9ff11d"><Timestamp>2020-12-15 20:16:01</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
