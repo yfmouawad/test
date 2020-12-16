@@ -375,9 +375,7 @@
       <column comment="" key="false" length="100" name="SYS_SOURCE_TRANSACTION_ID" nullable="true" originalLength="100" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="19" name="SYS_INSERTED_TS" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="1000" name="SYS_KEY_ID" nullable="true" originalLength="1000" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="19" name="SYS_UPDATED_TS" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="19" name="EFFECTIVE_TS" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="19" name="EXPIRY_TS" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="CURRENT_FLG" nullable="true" originalLength="1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="DELETE_FLG" nullable="true" originalLength="1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -457,9 +455,7 @@
         <mapperTableEntries expression="String.valueOf(row2.MemberID)" name="SYS_SOURCE_TRANSACTION_ID" nullable="true" type="id_String"/>
         <mapperTableEntries expression="TalendDate.getCurrentDate()" name="SYS_INSERTED_TS" nullable="true" type="id_Date"/>
         <mapperTableEntries expression="(java.util.UUID.randomUUID()).toString()" name="SYS_KEY_ID" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.CreatedOn" name="SYS_UPDATED_TS" nullable="true" type="id_Date"/>
         <mapperTableEntries expression="row2.CreatedOn" name="EFFECTIVE_TS" nullable="true" type="id_Date"/>
-        <mapperTableEntries expression="row2.CreatedOn" name="EXPIRY_TS" nullable="true" type="id_Date"/>
         <mapperTableEntries expression="&quot;1&quot;" name="CURRENT_FLG" nullable="true" type="id_String"/>
         <mapperTableEntries expression="&quot;0&quot;" name="DELETE_FLG" nullable="true" type="id_String"/>
       </outputTables>
@@ -995,17 +991,7 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SYS_UPDATED_TS"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="EFFECTIVE_TS"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EXPIRY_TS"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -1065,9 +1051,7 @@
       <column comment="" key="false" length="100" name="SYS_SOURCE_TRANSACTION_ID" nullable="true" originalLength="100" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="19" name="SYS_INSERTED_TS" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="1000" name="SYS_KEY_ID" nullable="true" originalLength="1000" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="19" name="SYS_UPDATED_TS" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="19" name="EFFECTIVE_TS" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="19" name="EXPIRY_TS" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="CURRENT_FLG" nullable="true" originalLength="1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="DELETE_FLG" nullable="true" originalLength="1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -1107,9 +1091,7 @@
       <column comment="" key="false" length="100" name="SYS_SOURCE_TRANSACTION_ID" nullable="true" originalLength="100" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="19" name="SYS_INSERTED_TS" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="1000" name="SYS_KEY_ID" nullable="true" originalLength="1000" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="19" name="SYS_UPDATED_TS" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="19" name="EFFECTIVE_TS" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="19" name="EXPIRY_TS" nullable="true" originalLength="19" pattern="&quot;dd-MM-yyyy hh:mm:ss&quot;" precision="0" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="CURRENT_FLG" nullable="true" originalLength="1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="DELETE_FLG" nullable="true" originalLength="1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -3238,13 +3220,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ba279eb4-578d-4518-a0e9-807fc3f7c9c7"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1sUk3r86W5oBgdtVGxnBF4gnurqbaVhTDMBGYx8zRUyNlJTcTBSfTXn+Oh67LlpOhIC6jLKaAy+C
-Gj3Mr31xow==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_30403110-fe8c-4846-b9ae-2eb7d04688d1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0vSNxQ2Yjy76KbtpgnFYozxms5xfqsCpf4HbhTWDTtg63SFuKICyo6+8iP6SVSiPCOUYfUyP0YK+
-X3rYUrdsug==</DigestValue></Reference></SignedInfo><SignatureValue>bErd6WrJNw9XDK88t2uPrLvqxvLnrKT1ZM3eXW2sJFZoLUVNv22wh32l6dYbh2TGLiCjnJM7nOIv
-eDBM5G6Y6r8gvTndXnZEeFUBTlk3zFsoTKvrHwKAwQvdkz3bCN6HoAmhJ9cOj+5l7OrpnscdHY0B
-NHV0qO+uotRzZZHeWvdG9ypAA9fGQo5RCnC1DDMUiyOn78+3HYmfjA7OakWawd8yi2zQl8AzYorG
-ORBq2ZgIMulPxcmcQZTydzVuQosgrSIGTj3rHXqw9WvePNVEuRwwskQOtWDfhB/0Mgqn+BXRd62g
-0xVTRrSFnZxG2JGQcOjU4no9yOejA93I6KPS4g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_4eec34b1-5b96-4ed2-837b-5e3530b1bb85"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>DT0XZHQsS+06Mp3EJS1MtmRU0e34pwm/QGZZkIVnVnSgRxql1mqfIp3RD4TbT1+PizF7ls56Y+gY
+irSxX9eeXQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_cb031d8d-84f3-4705-a34e-8031481c9f61"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zSHhXo0y4mNqMzmLUjXNaqGdtdfoFLC4hf0p8t1+MZNsHELi6lYhIqw7EYgKFzpbQDd9NhsnxpxU
+P7//HTZs0w==</DigestValue></Reference></SignedInfo><SignatureValue>Wx/CrIS0Zd7cnazorONWqlLs33o8isFHwtXupJ4dHwSoGhm2EtG3GfNba53w4se2FhkFpGtWBn+O
+FJtlCtrkO5cQXgIjb/s/bW0N/KSUzfhsQFAF0ZgLh73qmLZYmgmOAE6aiKDUS5WCCspkuRF2GNCV
+7K+BzDmJedUvUTwx+QyepuddKX3cbX1giGBwxvKQtAMlRMXbESOfIqwQcd0rKZDNtdxQC+B2qi22
+eLRsS6VjSZAP7m28Ne4EytpJbnJJo08JTuCcUIhrvmtd+3kOe8Kp1WdtmqJWhIcRFfcUSVlBQNol
+Sj180vRjffPoNszq+y9c1usLU00T3cz2fI+GnQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -3268,4 +3250,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_30403110-fe8c-4846-b9ae-2eb7d04688d1" Target="#_ba279eb4-578d-4518-a0e9-807fc3f7c9c7"><Timestamp>2020-12-16 13:05:32</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_cb031d8d-84f3-4705-a34e-8031481c9f61" Target="#_4eec34b1-5b96-4ed2-837b-5e3530b1bb85"><Timestamp>2020-12-16 13:06:29</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
