@@ -1662,7 +1662,7 @@
         <additionalField key="AVRO_TECHNICAL_KEY" value="WhiteListedOn"/>
         <additionalField key="di.date.noLogicalType" value="true"/>
       </column>
-      <column comment="" key="false" length="-1" name="Notes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="Notes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="TEXT" type="id_String" usefulColumn="true">
         <additionalField key="AVRO_TECHNICAL_KEY" value="Notes"/>
       </column>
       <column comment="" key="false" length="-1" name="isInactive" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true">
@@ -1850,7 +1850,7 @@
         <additionalField key="AVRO_TECHNICAL_KEY" value="WhiteListedOn"/>
         <additionalField key="di.date.noLogicalType" value="true"/>
       </column>
-      <column comment="" key="false" length="-1" name="Notes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="Notes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="TEXT" type="id_String" usefulColumn="true">
         <additionalField key="AVRO_TECHNICAL_KEY" value="Notes"/>
       </column>
       <column comment="" key="false" length="-1" name="isInactive" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true">
@@ -2411,7 +2411,7 @@
         <additionalField key="AVRO_TECHNICAL_KEY" value="WhiteListedOn"/>
         <additionalField key="di.date.noLogicalType" value="true"/>
       </column>
-      <column comment="" key="false" length="-1" name="Notes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="Notes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="TEXT" type="id_String" usefulColumn="true">
         <additionalField key="AVRO_TECHNICAL_KEY" value="Notes"/>
       </column>
       <column comment="" key="false" length="-1" name="isInactive" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true">
@@ -2602,7 +2602,7 @@
         <additionalField key="AVRO_TECHNICAL_KEY" value="WhiteListedOn"/>
         <additionalField key="di.date.noLogicalType" value="true"/>
       </column>
-      <column comment="" key="false" length="-1" name="Notes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="Notes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="TEXT" type="id_String" usefulColumn="true">
         <additionalField key="AVRO_TECHNICAL_KEY" value="Notes"/>
       </column>
       <column comment="" key="false" length="-1" name="isInactive" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true">
@@ -3682,7 +3682,7 @@
         <additionalField key="AVRO_TECHNICAL_KEY" value="WhiteListedOn"/>
         <additionalField key="di.date.noLogicalType" value="true"/>
       </column>
-      <column comment="" key="false" length="-1" name="Notes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="Notes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="TEXT" type="id_String" usefulColumn="true">
         <additionalField key="AVRO_TECHNICAL_KEY" value="Notes"/>
       </column>
       <column comment="" key="false" length="-1" name="isInactive" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true">
@@ -3867,7 +3867,7 @@
         <additionalField key="AVRO_TECHNICAL_KEY" value="WhiteListedOn"/>
         <additionalField key="di.date.noLogicalType" value="true"/>
       </column>
-      <column comment="" key="false" length="-1" name="Notes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="Notes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="TEXT" type="id_String" usefulColumn="true">
         <additionalField key="AVRO_TECHNICAL_KEY" value="Notes"/>
       </column>
       <column comment="" key="false" length="-1" name="isInactive" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true">
@@ -4790,7 +4790,7 @@
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
-      <outputTables activateExpressionFilter="true" expressionFilter="TalendDate.formatDate(&quot;yyyy-MM-dd&quot;,row5.CreatedOn).equals(context.BUSINESS_DT)  ||  context.BUSINESS_DT.equals(&quot;&quot;)" name="copyOfInsert_Hist_0" sizeState="INTERMEDIATE">
+      <outputTables activateExpressionFilter="true" expressionFilter="!context.BUSINESS_DT.equals(&quot;&quot;) &amp;&amp; row5.EditedOn != null &amp;&amp; TalendDate.formatDate(&quot;yyyy-MM-dd&quot;,row5.EditedOn).equals(context.BUSINESS_DT)  &amp;&amp; !TalendDate.formatDate(&quot;yyyy-MM-dd&quot;,row5.EditedOn).equals(TalendDate.formatDate(&quot;yyyy-MM-dd&quot;,row5.CreatedOn))" name="copyOfInsert_Hist_0" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row5.CompanyID" name="CompanyID" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="row5.ProfileID" name="ProfileID" type="id_Integer"/>
         <mapperTableEntries expression="row5.ProfileTypeID" name="ProfileTypeID" type="id_Integer"/>
@@ -5436,7 +5436,7 @@
         <additionalField key="AVRO_TECHNICAL_KEY" value="WhiteListedOn"/>
         <additionalField key="di.date.noLogicalType" value="true"/>
       </column>
-      <column comment="" key="false" length="-1" name="Notes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="Notes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="TEXT" type="id_String" usefulColumn="true">
         <additionalField key="AVRO_TECHNICAL_KEY" value="Notes"/>
       </column>
       <column comment="" key="false" length="-1" name="isInactive" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true">
@@ -5635,7 +5635,7 @@
         <additionalField key="AVRO_TECHNICAL_KEY" value="WhiteListedOn"/>
         <additionalField key="di.date.noLogicalType" value="true"/>
       </column>
-      <column comment="" key="false" length="-1" name="Notes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="-1" name="Notes" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="TEXT" type="id_String" usefulColumn="true">
         <additionalField key="AVRO_TECHNICAL_KEY" value="Notes"/>
       </column>
       <column comment="" key="false" length="-1" name="isInactive" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true">
@@ -8000,13 +8000,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7a3d20c5-e8f7-4c74-91c0-edd8d34e13be"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Vt/QXkns50q5ElhSMjUxnxK2UYxmkVfSeCDcCE7E/vIGcoras1RkyK8ozisEhqXD1V9eoqT2C3kQ
-xA6M5kZePg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_622182f3-8810-4d60-a62e-4da527f466be"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>9BVpEXgnD2GMpMUEa4TyxAHh30w6UnQb0DxEUDwu1JcL0bYC5+3Ml3YbXb3rft0hvPn/UlnpwojX
-SNfjiGJ5cw==</DigestValue></Reference></SignedInfo><SignatureValue>iaE9148r4bf+QTgysQTO+XutV9CXdVn/LdQNg0t8+VswwEqwVlsPpGTd5KBXna839BWaXdoFKrUq
-+W61CFxwE4L7zwFPLFABtFnnF6C8JjkV81a5Kv9os32ZQrhRn4fWbIbJb2JPgqbeW4So54y+6w9n
-boUg+3YlI0fqOXbpOHRtZOPI+AEry0LtIlZeg/U/IKg5vZd8OLKrjI1utHaJx09pJV6ZQSiET83m
-VFrmMBV1B4FSp9oLZUdYov1YatuFKtB+K7b0IjWrZYpmwtWg8dw30sc7Ep+OZrOxxyj1XBJ5kCO7
-ZjTOx5vmzE2m4JLSnpghjS61SUsDZSoGH2cEUw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b0dee69e-03ff-4cc5-ac4c-e883ce2875b1"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>p63jDWth8Cz8PNtYC/pcb4YZQZQP/dhof2LfE+JhRg2RYUE1vO/9e55qR6oIM8H+vuHw5KsaJb77
+R5FoLIOcxw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5694d673-9604-4792-bd49-f2f99daef9bd"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>RjasAI5kCW1UkCDO+tPEqdvxEo+o0Zhj5a232xhTFd8o8OWwuh1AAg6qVHl/yvAm32KeRgapVKcx
+/7W7KhzK2Q==</DigestValue></Reference></SignedInfo><SignatureValue>tjZr7DPTf3xUZXoPdF+2RoHhmJFv0VnwSbkxA27SLdljstUyrsFvObTy540R6AsNIyk7KQCAggby
+70JiXAjvA0adJuaCCW/pa9MSvriLLfIpshkZCcsjppF3dW8o3M5iafVt5ieemWYXwlzbf3B8Ktdr
+t1nS05JJJ6T0/a6AJNnul9SOAEK7sESuTaV9hfW6zIjN/uq5RIxVH4vG+7EMYv/3W/+3ufZuuJBX
+Rfb322On97QdE8NA6bTRihkhvIN8x9vOpQwZsK4r3DXDLm7orH+eRgdMva+CvI4+WaWltLD5kF24
+MeVMkE1l9Ei+MGM5z7Aoj+lv2DgngCXNMUX3mw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -8030,4 +8030,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_622182f3-8810-4d60-a62e-4da527f466be" Target="#_7a3d20c5-e8f7-4c74-91c0-edd8d34e13be"><Timestamp>2020-12-28 15:43:34</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5694d673-9604-4792-bd49-f2f99daef9bd" Target="#_b0dee69e-03ff-4cc5-ac4c-e883ce2875b1"><Timestamp>2020-12-28 18:03:01</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
