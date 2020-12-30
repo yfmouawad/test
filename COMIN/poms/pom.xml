@@ -12,6 +12,7 @@
     <module>code/routines</module>
     <module>jobs/process/COMMERCIAL/COMMERCIAL_MARIADB/member_0.1</module>
     <module>jobs/process/COMMERCIAL/COMMERCIAL_MARIADB/profile_0.1</module>
+    <module>jobs/process/COMMERCIAL/COMMERCIAL_MARIADB/profiles_members_0.1</module>
   </modules>
   <properties>
     <talend.project.name>COMIN</talend.project.name>
