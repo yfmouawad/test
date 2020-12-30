@@ -401,7 +401,7 @@
         <mapperTableEntries expression="row2.EditedBy" name="EditedBy" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="(java.util.UUID.randomUUID()).toString()" name="SYS_TRANSACTION_ID" nullable="true" type="id_String"/>
         <mapperTableEntries expression="&quot;I&quot;" name="SYS_OPERATION_CD" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="String.valueOf(row2.ProfileID) || '-' ||String.valueOf(row2.MemberID)" name="SYS_SOURCE_TRANSACTION_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="String.valueOf(row2.ProfileID) + '-' + String.valueOf(row2.MemberID)" name="SYS_SOURCE_TRANSACTION_ID" nullable="true" type="id_String"/>
         <mapperTableEntries expression="TalendDate.getCurrentDate()" name="SYS_INSERTED_TS" nullable="true" type="id_Date"/>
         <mapperTableEntries expression="row2.CreatedOn" name="EFFECTIVE_TS" nullable="true" type="id_Date"/>
       </outputTables>
@@ -419,7 +419,7 @@
         <mapperTableEntries expression="row2.EditedBy" name="EditedBy" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="(java.util.UUID.randomUUID()).toString()" name="SYS_TRANSACTION_ID" nullable="true" type="id_String"/>
         <mapperTableEntries expression="&quot;I&quot;" name="SYS_OPERATION_CD" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="String.valueOf(row2.ProfileID) || '-' ||String.valueOf(row2.MemberID)" name="SYS_SOURCE_TRANSACTION_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="String.valueOf(row2.ProfileID) + '-' + String.valueOf(row2.MemberID)" name="SYS_SOURCE_TRANSACTION_ID" nullable="true" type="id_String"/>
         <mapperTableEntries expression="TalendDate.getCurrentDate()" name="SYS_INSERTED_TS" nullable="true" type="id_Date"/>
         <mapperTableEntries expression="(java.util.UUID.randomUUID()).toString()" name="SYS_KEY_ID" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row2.CreatedOn" name="EFFECTIVE_TS" nullable="true" type="id_Date"/>
@@ -1617,7 +1617,7 @@
         <mapperTableEntries expression="row5.EditedBy" name="EditedBy" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="(java.util.UUID.randomUUID()).toString()" name="SYS_TRANSACTION_ID" nullable="true" type="id_String"/>
         <mapperTableEntries expression="&quot;U&quot;" name="SYS_OPERATION_CD" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="String.valueOf(row5.MemberID)" name="SYS_SOURCE_TRANSACTION_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="String.valueOf(row5.ProfileID) + '-' + String.valueOf(row5.MemberID)" name="SYS_SOURCE_TRANSACTION_ID" nullable="true" type="id_String"/>
         <mapperTableEntries expression="TalendDate.getCurrentDate()" name="SYS_INSERTED_TS" nullable="true" type="id_Date"/>
         <mapperTableEntries expression="(java.util.UUID.randomUUID()).toString()" name="SYS_KEY_ID" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row5.CreatedOn" name="EFFECTIVE_TS" nullable="true" type="id_Date"/>
@@ -2933,13 +2933,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e6ddf1f4-14af-4fb3-a3b9-825a6b96367c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>R48kQXLAPTr3FtJQddEUottIL1I0BupNGMH+VKCOR/tVyDcBZqFvCu8ODRjxYoQg9LVjX2Q8Zku6
-Hpy6Jff3jA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a86e355d-5bcf-4240-8d84-8a4068ef9582"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>98xN53z46XQZOopvicHllI6i7X7PXtZ7rj1ln7UKkKbl6NLovf7fZzJSBr5RvG1sSn4OYinFh5Rb
-1/5cXSOEgA==</DigestValue></Reference></SignedInfo><SignatureValue>bx42YhGfHO6hdHoEgvUIrvxNR06jw1jqT7lEubFggYbVdkch8IEO10uyzHiSxvBCiEsThmTHAxQO
-Cbc+dqlVfXg/RvuSzXFUl7MaW0+mq9kPIL8rs/Ui+VQp6560KkfgUr0ULSIH11wi6F6WNXt23bh0
-NttK9J0Ge+r2qTPiFJUHjVA66VW8m4S1A7sxF69hjJi17hSru9trDg95kd8NKCUxl2+uB4RBFrzS
-o3TUjtgzziHrVabBw112CtFA6HPHWXNmjN969sj8KAiPusLslrilcZYPWjriTE1zLeE1bFDSY5Kv
-1iHpvkng1Qq19Nf+pBfStZBhT9AYKpZddFSrwQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_82b26fcf-246a-41d2-ae45-e2e10ec3d2d2"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>n9QcBS7DfFdn2sCjpL/WkmKEKZtt6SW4JO8KLpeeKhBMfXelkaMAY4d+/FqB6t3H1/Ctns/pcls4
+nX4s46iiEg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_9ebfca7d-64ed-4d13-9bcd-0174ee3505e3"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>4eZkEp/iVmdsJXo5WWnS04iukAa2u6W0FwDbiqnA9Ts98U93JQysRLcdc0edQom5K1bOIH4qwaIa
+eFE+GQii/Q==</DigestValue></Reference></SignedInfo><SignatureValue>yfpiCYd4+py6VXdwTxVxLoPzC6oixY0p/01V0vC8bT1O7O2GI1CwoEjYK+pUfXN+M7xJ1GX3leeq
+F8fo86Y5F2mnwKc2yBHRBSVGL1qGmT0qNMcKB5uJ+5nleOJ5JtI0Vcn+rFkMLHYScR0le8SHCAxL
+NNW1XY/78dpsLqzU6oSiXOb279THS/1tixUJ0zKHbfY5h76k8qNVUXSIFCkK1VTkdoDiAmdAGEQM
+woFTK3itsH1m7hjA9utc0egOJmy9J27ZeLELffxM5zZniJ/8iyy/cASbwCFTz02Itnvy6eh4VcRG
+45xUDswVa0e8upJslR9kMe7jPYHV/rxvg08u+w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
 BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
 RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
 LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
@@ -2963,4 +2963,4 @@ r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
 EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
 BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
 6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
-Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a86e355d-5bcf-4240-8d84-8a4068ef9582" Target="#_e6ddf1f4-14af-4fb3-a3b9-825a6b96367c"><Timestamp>2020-12-30 11:49:58</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_9ebfca7d-64ed-4d13-9bcd-0174ee3505e3" Target="#_82b26fcf-246a-41d2-ae45-e2e10ec3d2d2"><Timestamp>2020-12-30 11:55:59</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
